@@ -3,6 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 from sys import argv
 
+print "start script"
+
 username = argv[1]
 password = argv[2]
 start = argv[3]
