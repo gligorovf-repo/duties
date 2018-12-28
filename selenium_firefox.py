@@ -32,7 +32,7 @@ print "Passwd: ", password
 # s = requests.Session()
 
 for i in range(int(start),int(finish)+1):
-	body = '<BulkSendDutyToBank IsPartOfBlock="false"> <SendDutiesToBank> <SendDutyToBank ID="',i,'" FulfilledOnlyByNHSpWebPortal="false"> <OrgUnit ID="',finish,'"/> <BookingReason ID="1"/> <Competences/> </SendDutyToBank> </SendDutiesToBank> </BulkSendDutyToBank>'
+	body = '<BulkSendDutyToBank IsPartOfBlock="false"> <SendDutiesToBank> <SendDutyToBank ID="',i,'" FulfilledOnlyByNHSpWebPortal="false"> <OrgUnit ID="',argv[5],'"/> <BookingReason ID="1"/> <Competences/> </SendDutyToBank> </SendDutiesToBank> </BulkSendDutyToBank>'
 	print body
 # 	response = s.post('http://sdc-devvatfxap1/HealthRoster/FLEXAUTOPS/Process', cookies=cookies, data=body)
 
