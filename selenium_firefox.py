@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import requests
 from selenium import webdriver
 from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
