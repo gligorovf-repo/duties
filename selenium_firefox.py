@@ -15,7 +15,7 @@ print "Passwd: ", password
 
 firefoxProfile = FirefoxProfile()
 firefoxProfile.set_preference("plugin.state.flash", 2)
-driver = webdriver.Firefox(firefoxProfile, executable_path='geckodriver.exe')
+driver = webdriver.Firefox(firefoxProfile, executable_path='/godata/pipelines/duty/geckodriver.exe')
 url = "http://sdc-devvatfxap1/HealthRoster/FLEXAUTOPS/"
 driver.get(url)
 
